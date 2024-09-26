@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์เกี่ยวกับเลขยกกำลัง</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>การเรียนรู้เลขยกกำลัง</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">ความหมาย</a></li>
+                <li><a href="#rules">กฎของเลขยกกำลัง</a></li>
+                <li><a href="#exercise">แบบฝึกหัด</a></li>
+                <li><a href="#calculator">เครื่องคิดเลข</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>ความหมายของเลขยกกำลัง</h2>
+        <p>เลขยกกำลังหมายถึงการคูณจำนวนตัวเองหลายครั้ง ตัวอย่างเช่น 2^3 หมายถึง 2 × 2 × 2 = 8</p>
+    </section>
+
+    <section id="rules">
+        <h2>กฎของเลขยกกำลัง</h2>
+        <ul>
+            <li><b>a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup></b></li>
+            <li><b>a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m-n</sup></b></li>
+            <li><b>(a<sup>m</sup>)<sup>n</sup> = a<sup>m×n</sup></b></li>
+            <li><b>a<sup>0</sup> = 1</b></li>
+            <li><b>a<sup>-n</sup> = 1 / a<sup>n</sup></b></li>
+        </ul>
+    </section>
+
+    <section id="exercise">
+        <h2>แบบฝึกหัด</h2>
+        <p>จงคำนวณค่า: 2<sup>5</sup>, 3<sup>4</sup>, และ 5<sup>3</sup></p>
+    </section>
+
+    <section id="calculator">
+        <h2>เครื่องคิดเลขยกกำลัง</h2>
+        <input type="number" id="base" placeholder="ใส่เลขฐาน">
+        <input type="number" id="exponent" placeholder="ใส่เลขชี้กำลัง">
+        <button onclick="calculateExponent()">คำนวณ</button>
+        <p id="result"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 เว็บไซต์การเรียนรู้เลขยกกำลัง</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
